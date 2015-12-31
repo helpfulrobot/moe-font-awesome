@@ -44,7 +44,7 @@ class FontAwesomeField extends TextField
      */
     public function validate($validator)
     {
-        if (!empty ($this->value) && !preg_match('/^fa-[a-z]+/', $this->value)) {
+        if (!empty($this->value) && !preg_match('/^fa-[a-z]+/', $this->value)) {
             $validator->validationError(
                 $this->name, 'Please enter a valid Font Awesome font name format.', 'validation', false
             );
